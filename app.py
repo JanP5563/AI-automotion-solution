@@ -754,15 +754,15 @@ with col_result:
             st.text(result["memo"])
 
         # Download PDF
-        # pdf_bytes = build_pdf(result, form_data, client_type)
-        # client_id = form_data.get("company_name") or form_data.get("full_name", "client")
-        # st.download_button(
-        #     label="Download Credit Memo (PDF)",
-        #     data=pdf_bytes,
-        #     file_name=f"credit_memo_{client_id.replace(' ','_')}_{datetime.now().strftime('%Y%m%d')}.pdf",
-        #     mime="application/pdf",
-        #     use_container_width=True,
-        # )
+        pdf_bytes = build_pdf(result, form_data, client_type)
+        client_id = form_data.get("company_name") or form_data.get("full_name", "client")
+        st.download_button(
+            label="Download Credit Memo (PDF)",
+            data=pdf_bytes,
+            file_name=f"credit_memo_{client_id.replace(' ','_')}_{datetime.now().strftime('%Y%m%d')}.pdf",
+            mime="application/pdf",
+            use_container_width=True,
+        )
     else:
         st.markdown("""
         <div class="card" style="text-align:center; padding: 3rem 1.5rem;">
