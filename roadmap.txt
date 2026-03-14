@@ -1,0 +1,6 @@
+1. Zrób zeby dzialalo z pdfami bez pdfowo itp
+2. zmien model na zwykly tanszy na API call
+3. zmien zeby nie pokazywalo sie na stonie limit 200 MB tylko mniej, 5
+4. Napraw zeby nie bylo widac ze sa bledy wszedzie
+
+5. Opisz, nagraj, wyslij
