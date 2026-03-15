@@ -4,7 +4,7 @@ import fitz  # PyMuPDF
 import json
 import os
 from typing import Any, cast
-from fpdf import FPDF
+# from fpdf import FPDF
 from datetime import datetime
 from dotenv import load_dotenv
 
