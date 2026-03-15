@@ -5,3 +5,5 @@
 5. Ewentualnie zrob zeby bylo mozna pobrac pdfa
 
 5. Opisz, nagraj, wyslij
+
+Future - maybe add pdf downloading?

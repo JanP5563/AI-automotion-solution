@@ -1,7 +1,7 @@
 # FinServe Credit Assessment PoC
 
 An AI-powered credit assessment tool built for the FinServe scenario.  
-Turns manual credit analysis (2+ hours) into a 3-minute automated workflow.
+Turns manual credit analysis (1+ hours) into a 3-minute automated workflow.
 
 ## What it does
 
@@ -11,14 +11,13 @@ Turns manual credit analysis (2+ hours) into a 3-minute automated workflow.
    - **Agent 1** — extracts and validates structured data from form + document
    - **Agent 2** — scores credit risk with a factor-by-factor breakdown
    - **Agent 3** — drafts a formal credit committee memo
-4. Results are shown in a dashboard + downloadable as a PDF credit memo
+4. Results are shown in a dashboard
 
 ## Tech stack
 
 - **Streamlit** — web UI
 - **Anthropic Claude API** — three-agent AI pipeline
 - **PyMuPDF** — PDF text extraction
-- **fpdf2** — PDF credit memo generation
 
 ## Run locally
 
@@ -57,7 +56,7 @@ streamlit run app.py
 
 | | Manual process | This tool |
 |---|---|---|
-| Time per credit memo | ~2 hours | ~3 minutes |
-| Memos per day (per officer) | 3–4 | 15+ |
+| Time per credit memo | ~1 hour | ~3 minutes |
+| Memos per day (per officer) | 6-8 | 15+ |
 | Consistency | Varies by analyst | Standardised |
-| Audit trail | Word/email files | Structured JSON + PDF |
+| Audit trail | Word/email files | Structured JSON |
